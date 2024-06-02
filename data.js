@@ -1,77 +1,101 @@
-export const githubUsername = "";
+export const githubUsername = ""; // Your GitHub username
 
 // Personal Information
-export const Name = "Lilian";
-export const LastName = "Riveros";
-export const FullName = `${Name} ${LastName}`;
-export const mail = "lilian.riveros@gmail.com";
+export const Name = "Laura";
+export const LastName = "Picco";
+export const FullName = `${Name} ${LastName}`; // Concatenation of your first and last name
+export const mail = "laura.picco@example.com"; // Your email address
 
 // Meta information
-export const metaTitle = "Lilian Riveros - Quality Engineer and Project Manager";
-export const metaDescription = "Experienced Quality Engineer Practice Coach and Project Manager with a strong background in software development and IT project management.";
-export const metaKeywords = "Quality Engineer, Project Manager, Software Development, IT Project Management, Agile Methodologies, QA";
-export const metaAuthor = "Lilian Riveros";
+export const metaTitle = "Laura Picco's Professional Portfolio";
+export const metaDescription = "Explore the professional portfolio of Laura Picco, showcasing her expertise in food science, chemical engineering, education, and volunteer work.";
+export const metaKeywords = "Laura Picco, food science, chemical engineering, portfolio, education, certifications, volunteer work";
+export const metaAuthor = "Laura Picco";
 
 // Contact information
-export const contactInfo = `I'm just an email or a message away on any platform. Send me an email at ${mail}, or find me on LinkedIn. Let’s start a conversation about your ideas or just enjoy a casual chat.`;
+export const contactInfo = `I'm just an email or a message away on any platform. Send me an email at ${mail}, or find me on LinkedIn. Let’s start a conversation about your ideas, potential collaborations, or simply enjoy a casual chat.`; // Contact information template with your email
 
 // Bio
 export const bio = [
-    "Quality Engineer Practice Coach with extensive experience in software development and IT project management.",
-    `Currently working at MentorMate Paraguay, promoting professional growth within the Quality Engineering team.`,
-    `Former Project Manager at IT Alianza and MentorMate Paraguay, overseeing various projects including ERP modernization and database migrations.`,
-    `Experienced in agile methodologies, risk management, and establishing QA departments from scratch.`,
-    "Active member of professional communities such as the Paraguay Testing Community and PMI Asunción Chapter."
+    "Welcome to the portfolio of Laura Picco: an accomplished Food Scientist, Chemical Engineer, Educator, and dedicated Volunteer.",
+    `With dual degrees in Science and Technology of Food and Chemical Engineering, I bring a robust academic background and practical expertise to the table.`,
+    `My professional journey encompasses a wide array of skills and experiences, from conducting food safety analysis and chemical process design to teaching robotics and mentoring young minds.`,
+    `I am driven by a passion for continuous learning, sharing knowledge, and making a positive impact through community engagement and volunteer work.`,
+    "Thank you for visiting my portfolio. I invite you to explore my journey, projects, and achievements."
 ];
 
 // Languages
 export const languages = [
     {
-        title: "Spanish",
-        skillName: "Native",
-        color: "green",
-        percentage: "100%",
+        title: "Native Spanish Speaker",
+        skillName: "Spanish",
+        color: "1",
+        percentage: "100",
     },
     {
-        title: "English",
-        skillName: "Professional Proficiency",
-        color: "blue",
-        percentage: "90%",
+        title: "Fluent in English",
+        skillName: "English",
+        color: "2",
+        percentage: "95",
+    },
+    {
+        title: "Fluent in Guaraní",
+        skillName: "Guaraní",
+        color: "3",
+        percentage: "90",
+    },
+    {
+        title: "Proficient in Portuguese",
+        skillName: "Portuguese",
+        color: "4",
+        percentage: "85",
     }
 ];
 
 // Skills
 export const skills = {
-    "Programming and Scripting Languages": [
+    "Food Science and Technology": [
         {
-            "skillName": "Oracle Forms & Reports",
-            "imagePath": "path/to/oracle_forms_reports_image",
-        }
-    ],
-    "Database Management Systems": [
-        {
-            "skillName": "Oracle Database",
-            "imagePath": "path/to/oracle_database_image",
-            "description": "Experience in database administration, user management, and performance tuning."
-        }
-    ],
-    "Testing and Automation Tools": [
-        {
-            "skillName": "Jira",
-            "imagePath": "path/to/jira_image",
-            "description": "Proficient in using Jira for project tracking and issue management."
+            "skillName": "Food Safety Analysis",
+            "imagePath": "images/skills/food_safety_logo.png",
         },
         {
-            "skillName": "Confluence",
-            "imagePath": "path/to/confluence_image",
-            "description": "Experience in managing project documentation using Confluence."
+            "skillName": "Quality Control",
+            "imagePath": "images/skills/quality_control_logo.png",
         }
     ],
-    "Version Control and CI/CD Tools": [
+    "Chemical Engineering": [
         {
-            "skillName": "GitLab CI/CD",
-            "imagePath": "path/to/gitlab_image",
-            "description": "Skilled in continuous integration and deployment using GitLab CI/CD."
+            "skillName": "Process Design",
+            "imagePath": "images/skills/process_design_logo.png",
+        },
+        {
+            "skillName": "Chemical Analysis",
+            "imagePath": "images/skills/chemical_analysis_logo.png",
+        }
+    ],
+    "Teaching and Education": [
+        {
+            "skillName": "Curriculum Development",
+            "imagePath": "images/skills/curriculum_development_logo.png",
+            "description": "Creating and implementing comprehensive educational curricula tailored to various subjects and student needs."
+        },
+        {
+            "skillName": "Robotics Education",
+            "imagePath": "images/skills/robotics_education_logo.png",
+            "description": "Instructing students in robotics and programming, fostering innovation and technical skills."
+        }
+    ],
+    "Volunteer Work": [
+        {
+            "skillName": "Community Outreach",
+            "imagePath": "images/skills/community_outreach_logo.png",
+            "description": "Engaging in projects that benefit the community and promote science and technology education."
+        },
+        {
+            "skillName": "Youth Mentoring",
+            "imagePath": "images/skills/youth_mentoring_logo.png",
+            "description": "Guiding and supporting young individuals in their educational and professional development."
         }
     ]
 };
@@ -80,16 +104,16 @@ export const skills = {
 export const certifications = {
     LinkedInLearning: [
         {
-            certificationName: "Agile Foundations",
-            image: "path/to/agile_foundations_image",
-            preview: "link/to/agile_foundations_preview"
+            certificationName: "Food Safety and Quality",
+            image: "images/Certifications/LinkedInLearning/Food_Safety_Quality.jpg",
+            preview: "http://example.com/food_safety_quality.jpg"
         }
     ],
     technicalCertifications: [
         {
-            certificationName: "ISTQB Certified Tester",
-            image: "path/to/istqb_image",
-            preview: "link/to/istqb_preview"
+            certificationName: "Chemical Process Design",
+            image: "images/Certifications/Chemical_Process_Design.jpg",
+            preview: "http://example.com/chemical_process_design.jpg"
         }
     ]
 };
@@ -97,91 +121,82 @@ export const certifications = {
 // Experience
 export const experience = [
     {
-        title: "MentorMate Paraguay",
-        subtitle: "Quality Engineer Practice Coach",
-        duration: "2023 - Present",
+        title: "Food Scientist",
+        subtitle: "Agropecuaria Cooperativa La Paz",
+        duration: "2020 - Present",
         details: [
-            "Promote professional growth and well-being within the Quality Engineering team.",
-            "Build trust-based relationships to facilitate knowledge and experience sharing.",
-            "Drive continuous improvement and excellence in Quality Engineering.",
-            "Provide mentorship in agile methodologies tailored to Quality Engineering.",
-            "Encourage the adoption of cutting-edge quality assurance techniques.",
-            "Support the establishment of an agile mindset and continuous improvement principles."
+            "Conducted rigorous food safety and quality control tests, ensuring compliance with industry standards.",
+            "Developed innovative food products and optimized processing techniques to enhance efficiency and quality.",
+            "Collaborated with cross-functional teams to maintain high standards of food safety and regulatory compliance."
         ],
-        tags: ["Quality Engineering", "Agile Methodologies", "Mentorship"],
-        icon: "path/to/mentormate_icon",
+        tags: ["Food Safety", "Quality Control", "Product Development"],
+        icon: "flask",
     },
     {
-        title: "MentorMate Paraguay",
-        subtitle: "Project Manager",
-        duration: "2022 - 2023",
+        title: "Chemical Engineer",
+        subtitle: "Various Companies",
+        duration: "2015 - 2020",
         details: [
-            "Update project trackers, status reports, and risk lists.",
-            "Supervise billable task assignments and forecasts.",
-            "Coordinate time approvals and invoices.",
-            "Manage document repositories using Confluence.",
-            "Develop and implement communication plans.",
-            "Manage tasks and communications through Jira, Slack, Teams, and Google Chat/Spaces."
+            "Designed and optimized chemical processes to improve production efficiency and reduce costs.",
+            "Performed comprehensive chemical analyses and quality assessments to ensure product excellence.",
+            "Led multidisciplinary projects, coordinating efforts to achieve seamless integration and successful outcomes."
         ],
-        tags: ["Project Management", "Agile", "Communication"],
-        icon: "path/to/mentormate_icon",
+        tags: ["Process Design", "Chemical Analysis", "Project Management"],
+        icon: "industry",
     },
     {
-        title: "IT Alianza",
-        subtitle: "Project Manager",
-        duration: "2020 - 2022",
+        title: "Robotics Educator",
+        subtitle: "ImagineTech",
+        duration: "2018 - 2020",
         details: [
-            "Managed software development projects for ERP modernization and database migration.",
-            "Established QA departments and conducted evaluations for financial institutions.",
-            "Created IT Alianza's Quality Assurance Academy.",
-            "Managed outsourcing projects for a telecommunications client.",
-            "Drafted budgets, policies, and compliance procedures.",
-            "Organized large-scale events and conducted talent recruitment and coaching."
+            "Taught robotics and programming to students, inspiring the next generation of tech innovators.",
+            "Developed and implemented educational materials and curricula tailored to various learning styles.",
+            "Mentored students in science and technology projects, fostering critical thinking and problem-solving skills."
         ],
-        tags: ["Project Management", "QA", "ERP", "Database Migration"],
-        icon: "path/to/italianza_icon",
+        tags: ["Education", "Robotics", "Mentoring"],
+        icon: "robot",
     }
 ];
 
 // Education
 export const education = [
     {
-        title: "Facultad Politécnica, Universidad Nacional de Asunción, Paraguay",
-        duration: "2020 - 2024",
-        subtitle: "Master’s in ICT with emphasis on Software Engineering",
+        title: "Bachelor’s Degree in Science and Technology of Food",
+        duration: "2010 - 2014",
+        subtitle: "University of Paraguay",
         details: [
-            "Thesis in progress: usability testing on e-government sites."
+            "Focused on food safety, quality control, and food processing technologies.",
+            "Conducted research on innovative food preservation techniques, contributing to academic publications."
         ],
-        tags: ["Master’s", "ICT", "Software Engineering"],
-        icon: "path/to/una_icon",
+        tags: ["Food Science", "Quality Control", "Research"],
+        icon: "graduation-cap",
     },
     {
-        title: "Facultad Politécnica, Universidad Nacional de Asunción, Paraguay",
-        duration: "2018 - 2019",
-        subtitle: "Specialization in ICT with emphasis on Software Engineering",
-        details: [],
-        tags: ["Specialization", "ICT", "Software Engineering"],
-        icon: "path/to/una_icon",
-    },
-    {
-        title: "Facultad Politécnica, Universidad Nacional de Asunción, Paraguay",
-        duration: "2001 - 2005",
-        subtitle: "Bachelor’s in Systems Analysis",
-        details: [],
-        tags: ["Bachelor’s", "Systems Analysis"],
-        icon: "path/to/una_icon",
+        title: "Bachelor’s Degree in Chemical Engineering",
+        duration: "2006 - 2010",
+        subtitle: "University of Paraguay",
+        details: [
+            "Specialized in chemical process design, optimization, and analysis.",
+            "Completed projects focused on enhancing chemical production processes and reducing environmental impact."
+        ],
+        tags: ["Chemical Engineering", "Process Design", "Optimization"],
+        icon: "graduation-cap",
     }
 ];
 
 // Testimonials
 export const testimonials = {
     reviewer: "John Doe",
-    period: "2023",
-    company: "Tech Solutions Inc.",
+    period: "Various Positions",
+    company: "Agropecuaria Cooperativa La Paz",
     feedback: [
         {
-            title: "Excellent Mentor",
-            detail: "Lilian's mentorship and guidance have been instrumental in my professional development."
+            title: "Technical Expertise",
+            detail: "Laura's deep knowledge in food safety and quality control has been invaluable to our projects. She consistently ensures the highest standards."
+        },
+        {
+            title: "Team Collaboration",
+            detail: "Laura excels in team environments, always contributing her expertise and fostering a collaborative spirit. Her positive attitude and reliability are greatly appreciated."
         }
     ]
 };
@@ -189,50 +204,42 @@ export const testimonials = {
 // Footer
 export const footer = [
     {
-        label: "Contact",
+        label: "Dev Profiles",
         data: [
             {
-                text: "Email",
+                text: "GitHub",
+                link: "https://github.com/LauraPicco",
+            }
+        ],
+    },
+    {
+        label: "Resources",
+        data: [
+            {
+                text: "Send me a mail",
                 link: `mailto:${mail}`,
             },
             {
-                text: "LinkedIn",
-                link: "https://www.linkedin.com/in/lilian-riveros-valdez",
+                text: "Download Resume",
+                link: "assets/Laura_Picco_Resume.pdf",
+                target: "_blank"
             }
         ],
     },
     {
-        label: "Social Media",
+        label: "Social Profiles",
         data: [
             {
                 text: "LinkedIn",
-                link: "https://www.linkedin.com/in/lilian-riveros-valdez",
+                link: "https://www.linkedin.com/in/LauraPicco/",
             }
         ],
     },
     {
-        label: "Professional Associations",
+        label: "copyright-text",
         data: [
-            {
-                text: "Paraguay Testing Community",
-                link: "",
-            },
-            {
-                text: "PMI Asunción Chapter",
-                link: "",
-            },
-            {
-                text: "Oracle Users Group",
-                link: "",
-            }
-        ],
-    },
-    {
-        label: "Education",
-        data: [
-            "Master’s in ICT",
-            "Specialization in ICT",
-            "Bachelor’s in Systems Analysis"
+            "Made with &hearts; by Laura Picco.",
+            "&copy; No Copyrights. Feel free to use this template.",
         ],
     },
 ];
