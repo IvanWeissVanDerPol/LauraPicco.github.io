@@ -1,5 +1,5 @@
 import {
-    Name, LastName, FullName, mail, metaTitle, metaDescription, metaKeywords, metaAuthor, contactInfo, githubUsername, bio, languages, certifications, education, experience, footer, skills, testimonials
+    Name, LastName, FullName, mail, metaTitle, metaDescription, metaKeywords, metaAuthor, contactInfo, githubUsername, bio, languages, certifications, education, volunteering ,experience, footer, skills, testimonials
 } from './data.js';
 import { URLs } from './user-data/urls.js';
 
@@ -450,6 +450,61 @@ function populatePersonalInfo(fullNameId, emailId, contactInfoId, fullName, emai
     document.getElementById(contactInfoId).textContent = contactInfo;
 }
 
+/**
+ * Creates an HTML element for a volunteer work entry.
+ */
+function createVolunteerWorkItem(volunteer) {
+    if (enableLogging) console.log('Creating volunteer work item:', volunteer);
+    const { title, subtitle, duration, details, tags, icon } = volunteer;
+
+    const volunteerEntry = document.createElement('article');
+    volunteerEntry.className = 'timeline-entry animate-box fadeInUp animated';
+
+    const timelineInner = document.createElement('div');
+    timelineInner.className = 'timeline-entry-inner';
+
+    const timelineIcon = document.createElement('div');
+    timelineIcon.className = 'timeline-icon color-3';
+    const iconElement = document.createElement('i');
+    iconElement.className = `fa ${icon}`;
+    timelineIcon.appendChild(iconElement);
+
+    const timelineLabel = document.createElement('div');
+    timelineLabel.className = 'timeline-label';
+
+    const titleHTML = document.createElement('h2');
+    titleHTML.innerHTML = `${title} <span class="timeline-sublabel">${subtitle}</span>`;
+    timelineLabel.appendChild(titleHTML);
+
+    const durationSpan = document.createElement('span');
+    durationSpan.className = 'duration';
+    durationSpan.textContent = duration;
+    timelineLabel.appendChild(durationSpan);
+
+    details.forEach(detail => {
+        const detailParagraph = document.createElement('p');
+        detailParagraph.className = 'timeline-text';
+        detailParagraph.textContent = detail;
+        timelineLabel.appendChild(detailParagraph);
+    });
+
+    const tagsDiv = document.createElement('div');
+    tags.forEach(tag => {
+        const tagSpan = document.createElement('span');
+        tagSpan.className = 'badge badge-secondary';
+        tagSpan.textContent = tag;
+        tagsDiv.appendChild(tagSpan);
+    });
+    timelineLabel.appendChild(tagsDiv);
+
+    timelineInner.appendChild(timelineIcon);
+    timelineInner.appendChild(timelineLabel);
+    volunteerEntry.appendChild(timelineInner);
+
+    return volunteerEntry;
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     try {
         if (enableLogging) console.log('Document loaded, initializing...');
@@ -461,7 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
         populatePersonalInfo('fullname', 'email', 'contact-info', FullName, mail, contactInfo, enableLogging);
 
         // Create GitHub card
-        createGitHubCard(githubUsername);
+        // createGitHubCard(githubUsername);
         // fetchData(URLs.gitConnected, mapBasicResponse);
         // Populate bio
         populateContainer('bio', bio, createBioItem);
@@ -483,6 +538,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Populate testimonials
         populateTestimonials('testimonialItems', testimonials.feedback, enableLogging);
+
+        // Populate volunteer work
+        populateContainer('volunteerWork', volunteering, createVolunteerWorkItem);
 
         // Populate footer
         populateContainer('footer', footer, createFooterItem);
