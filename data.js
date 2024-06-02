@@ -4,7 +4,7 @@ export const githubUsername = ""; // Your GitHub username
 export const Name = "Laura";
 export const LastName = "Picco";
 export const FullName = `${Name} ${LastName}`; // Concatenation of your first and last name
-export const mail = "laura.picco@example.com"; // Your email address
+export const mail = "laura.picco2@gmail.com"; // Your email address
 
 // Meta information
 export const metaTitle = "Laura Picco's Professional Portfolio";
@@ -319,15 +319,7 @@ export const testimonials = {
 
 // Footer
 export const footer = [
-    {
-        label: "Dev Profiles",
-        data: [
-            {
-                text: "GitHub",
-                link: "https://github.com/LauraPicco",
-            }
-        ],
-    },
+    
     {
         label: "Resources",
         data: [
@@ -346,8 +338,12 @@ export const footer = [
         label: "Social Profiles",
         data: [
             {
+                text: "Instagram",
+                link: "https://www.instagram.com/picco_lau//",
+            },
+            {
                 text: "LinkedIn",
-                link: "https://www.linkedin.com/in/LauraPicco/",
+                link: "https://www.linkedin.com/in/laura-picco-62a37b210/",
             }
         ],
     },
